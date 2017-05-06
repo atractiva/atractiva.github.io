@@ -1,6 +1,14 @@
+/*p,h3,span all=selectors*/
+/*p=property =like font,color,size,etc-*/
+/*google "hex color palette/picker" for color values*/
+/* color:#576D94; vintage blue*/
+/* *{} = universal selector applied to all elements on the page*/
+
+
 p {
 	font-family:Garamond;
 	font-size:16px;
+	color:#8B1C62;
 }
 
 h3 {
@@ -8,8 +16,48 @@ h3 {
 	color:#36648b;
 	text-align:center;
 }
-
+h4{
+	font-family: Courier;
+	color:red;
+}
 span {
 	color:#cc0000;
 	font-size:24px;
+/*highlited*/
+	background-color:yellow;
 }
+
+
+/* 정확히 body/div 에만 속하는 paragraphs만 적용
+body>p{
+    font-weight:bold;
+}
+div>p{
+    color:#7AC5CD;
+}*/
+
+/* classes and IDs selectors override others like 
+classes in CSS = .
+
+html페이지꺼: 
+<p class="list_item">The more specific your selectors are, 
+the higher importance CSS gives to the styling you apply!</p>
+
+css페이지꺼:
+.list_item {
+	font-family: Vivaldi, cursive;
+}
+*/
+
+/*
+<p class="red">I'm a paragraph in the red class!</p>
+<p id="rogue">I'm a rogue paragraph! I do what I want!</p>
+
+.red {
+	color: red;
+}
+#rogue {
+	color: #FF00FF;}
+*/
+
+
